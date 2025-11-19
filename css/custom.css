@@ -1,0 +1,11 @@
+/* 彻底关闭旋转动画，同时添加轻微放大 + 柔光效果 */
+#aside .avatar-img {
+  transition: all 0.4s ease !important; /* 平滑动画 */
+  transform: scale(1) !important;       /* 默认大小 */
+  box-shadow: none !important;          /* 去掉原来的特效 */
+}
+
+#aside .avatar-img:hover {
+  transform: scale(1.08) !important;    /* 鼠标悬停轻微放大 */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4) !important; /* 柔光效果 */
+}
